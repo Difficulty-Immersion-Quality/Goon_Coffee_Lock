@@ -1,0 +1,86 @@
+// // ========================== Create Warlock Spell Slots ==========================
+
+// new entry "Goon_Shout_CreateWarlockSpellSlot_1"
+// type "SpellData"
+// data "SpellType" "Shout"
+// using "Shout_CreateSpellSlot_1"
+// data "SpellProperties" "ApplyStatus(GOON_WARLOCK_SPELLSLOT_1,100,-1)"
+// // Create Warlock Spell Slot: Level 1
+// data "DisplayName" "h62e34335gcb70g4a94ga200g8e0ceaa8d71d;1"
+// // Spend [1] &lt;LSTag Type="ActionResource" Tooltip="SorceryPoint"&gt;Sorcery Points&lt;/LSTag&gt; to unlock a level [2] &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slot&lt;/LSTag&gt;.
+// data "Description" "h86a21eefg87ddg4f0eg8ed6g0ce8da38b703;1"
+// data "RequirementConditions" "Tagged('WARLOCK')"
+
+// new entry "GOON_WARLOCK_SPELLSLOT_1"
+// type "StatusData"
+// data "StatusType" "BOOST"
+// using "SPELLSLOT_1"
+// data "Boosts" "ActionResource(WarlockSpellSlot,1,1)"
+
+// new entry "Goon_Shout_CreateWarlockSpellSlot_2"
+// type "SpellData"
+// data "SpellType" "Shout"
+// using "Shout_CreateSpellSlot_2"
+// data "SpellProperties" "ApplyStatus(GOON_WARLOCK_SPELLSLOT_2,100,-1)"
+// // Create Warlock Spell Slot: Level 2
+// data "DisplayName" "hfe17103cgf1a9g4648gba47g17ee59349944;1"
+// // Spend [1] &lt;LSTag Type="ActionResource" Tooltip="SorceryPoint"&gt;Sorcery Points&lt;/LSTag&gt; to unlock a level [2] &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slot&lt;/LSTag&gt;.
+// data "Description" "h86a21eefg87ddg4f0eg8ed6g0ce8da38b703;1"
+// data "RequirementConditions" "Tagged('WARLOCK')"
+
+// new entry "GOON_WARLOCK_SPELLSLOT_2"
+// type "StatusData"
+// data "StatusType" "BOOST"
+// using "SPELLSLOT_2"
+// data "Boosts" "ActionResource(WarlockSpellSlot,1,2)"
+
+// new entry "Goon_Shout_CreateWarlockSpellSlot_3"
+// type "SpellData"
+// data "SpellType" "Shout"
+// using "Shout_CreateSpellSlot_3"
+// data "SpellProperties" "ApplyStatus(GOON_WARLOCK_SPELLSLOT_3,100,-1)"
+// // Create Warlock Spell Slot: Level 3
+// data "DisplayName" "h1bcbf22dgf59fg473ag8ac3g8cfaf338c016;1"
+// // Spend [1] &lt;LSTag Type="ActionResource" Tooltip="SorceryPoint"&gt;Sorcery Points&lt;/LSTag&gt; to unlock a level [2] &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slot&lt;/LSTag&gt;.
+// data "Description" "h86a21eefg87ddg4f0eg8ed6g0ce8da38b703;1"
+// data "RequirementConditions" "Tagged('WARLOCK')"
+
+// new entry "GOON_WARLOCK_SPELLSLOT_3"
+// type "StatusData"
+// data "StatusType" "BOOST"
+// using "SPELLSLOT_3"
+// data "Boosts" "ActionResource(WarlockSpellSlot,1,3)"
+
+// new entry "Goon_Shout_CreateWarlockSpellSlot_4"
+// type "SpellData"
+// data "SpellType" "Shout"
+// using "Shout_CreateSpellSlot_4"
+// data "SpellProperties" "ApplyStatus(GOON_WARLOCK_SPELLSLOT_4,100,-1)"
+// // Create Warlock Spell Slot: Level 4
+// data "DisplayName" "h22edb119g4382g4c7egbf96g91e91158b78c;1"
+// // Spend [1] &lt;LSTag Type="ActionResource" Tooltip="SorceryPoint"&gt;Sorcery Points&lt;/LSTag&gt; to unlock a level [2] &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slot&lt;/LSTag&gt;.
+// data "Description" "h86a21eefg87ddg4f0eg8ed6g0ce8da38b703;1"
+// data "RequirementConditions" "Tagged('WARLOCK')"
+
+// new entry "GOON_WARLOCK_SPELLSLOT_4"
+// type "StatusData"
+// data "StatusType" "BOOST"
+// using "SPELLSLOT_4"
+// data "Boosts" "ActionResource(WarlockSpellSlot,1,4)"
+
+// new entry "Goon_Shout_CreateWarlockSpellSlot_5"
+// type "SpellData"
+// data "SpellType" "Shout"
+// using "Shout_CreateSpellSlot_5"
+// data "SpellProperties" "ApplyStatus(GOON_WARLOCK_SPELLSLOT_5,100,-1)"
+// // Create Warlock Spell Slot: Level 5
+// data "DisplayName" "h07671b46g0bdbg4833gb249g2339d749842c;1"
+// // Spend [1] &lt;LSTag Type="ActionResource" Tooltip="SorceryPoint"&gt;Sorcery Points&lt;/LSTag&gt; to unlock a level [2] &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slot&lt;/LSTag&gt;.
+// data "Description" "h86a21eefg87ddg4f0eg8ed6g0ce8da38b703;1"
+// data "RequirementConditions" "Tagged('WARLOCK')"
+
+// new entry "GOON_WARLOCK_SPELLSLOT_5"
+// type "StatusData"
+// data "StatusType" "BOOST"
+// using "SPELLSLOT_5"
+// data "Boosts" "ActionResource(WarlockSpellSlot,1,5)"

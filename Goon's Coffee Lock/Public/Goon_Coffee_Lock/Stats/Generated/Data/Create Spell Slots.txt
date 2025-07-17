@@ -41,6 +41,7 @@ using "Shout_CreateSpellSlot_1"
 data "Description" "hf04b5092g8112g4b7dg85e5g28203a1ea531;1"
 // data "DescriptionParams" "2;1"
 // data "UseCosts" "BonusActionPoint:1;SorceryPoint:2"
+data "PowerLevel" "1"
 // data "SpellFlags" ""
 
 // new entry "Shout_CreateSpellSlot_2"
