@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <contentList>
-	<!--  --> <content contentuid="" version="1"></content>
-	<!--  --> <content contentuid="" version="1"></content>
+	<!-- "Goon_CoffeeLockToggle" --> <content contentuid="hc8ad5a23g07dcg438cg985cgfab90ecaafd7" version="1">Eldritch-Arcane Equilibrium</content>
+	<!-- "Goon_CoffeeLockToggle" --> <content contentuid="hff69488bg965fg48a0g9b41g4798b1059771" version="1">While active you focus on channelling your eldritch magic, using your &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slots&lt;/LSTag&gt; before other &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt;.</content>
 	<!--  --> <content contentuid="" version="1"></content>
 	<!--  --> <content contentuid="" version="1"></content>
 	<!--  --> <content contentuid="" version="1"></content>
