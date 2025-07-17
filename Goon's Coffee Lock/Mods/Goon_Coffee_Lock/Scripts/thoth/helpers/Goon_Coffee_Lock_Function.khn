@@ -6,39 +6,39 @@ end
 -- ========================== Spell checks ==========================
 
 function Goon_CoffeeLockSpellCheck_1()
-    return IsSpell() & (IsSpellLevel(1) or Goon_SpellLevelEquals(1)) & HasUseCosts('SpellSlot')
+    return IsSpell() & HasUseCosts('SpellSlot')
 end
 
 function Goon_CoffeeLockSpellCheck_2()
-    return IsSpell() & (IsSpellLevel(2) or Goon_SpellLevelEquals(2)) & HasUseCosts('SpellSlot')
+    return IsSpell() & HasUseCosts('SpellSlot')
 end
 
 function Goon_CoffeeLockSpellCheck_3()
-    return IsSpell() & (IsSpellLevel(3) or Goon_SpellLevelEquals(3)) & HasUseCosts('SpellSlot')
+    return IsSpell() & HasUseCosts('SpellSlot')
 end
 
 function Goon_CoffeeLockSpellCheck_4()
-    return IsSpell() & (IsSpellLevel(4) or Goon_SpellLevelEquals(4)) & HasUseCosts('SpellSlot')
+    return IsSpell() & HasUseCosts('SpellSlot')
 end
 
 function Goon_CoffeeLockSpellCheck_5()
-    return IsSpell() & (IsSpellLevel(5) or Goon_SpellLevelEquals(5)) & HasUseCosts('SpellSlot')
+    return IsSpell() & HasUseCosts('SpellSlot')
 end
 
 function Goon_CoffeeLockSpellCheck_6()
-    return IsSpell() & (IsSpellLevel(6) or Goon_SpellLevelEquals(6)) & HasUseCosts('SpellSlot')
+    return IsSpell() & HasUseCosts('SpellSlot')
 end
 
 function Goon_CoffeeLockSpellCheck_7()
-    return IsSpell() & (IsSpellLevel(7) or Goon_SpellLevelEquals(7)) & HasUseCosts('SpellSlot')
+    return IsSpell() & HasUseCosts('SpellSlot')
 end
 
 function Goon_CoffeeLockSpellCheck_8()
-    return IsSpell() & (IsSpellLevel(8) or Goon_SpellLevelEquals(8)) & HasUseCosts('SpellSlot')
+    return IsSpell() & HasUseCosts('SpellSlot')
 end
 
 function Goon_CoffeeLockSpellCheck_9()
-    return IsSpell() & (IsSpellLevel(9 or Goon_SpellLevelEquals(9))) & HasUseCosts('SpellSlot')
+    return IsSpell() & HasUseCosts('SpellSlot')
 end
 
 -- ========================== Caster checks ==========================

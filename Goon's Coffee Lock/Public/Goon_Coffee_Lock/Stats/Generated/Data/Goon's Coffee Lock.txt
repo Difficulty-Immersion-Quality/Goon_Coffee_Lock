@@ -61,3 +61,5 @@ data "StatsFunctors" "IF(HasPassive('UnlockedWarlockSpellSlotLevel1') and not Ha
 // (IsSpell() & IsSpellLevel(1)) & HasUseCosts('SpellSlot') & 
 
 // HasSpellFlag(SpellFlags.Spell)
+
+// (IsSpellLevel(2) or Goon_SpellLevelEquals(2))
