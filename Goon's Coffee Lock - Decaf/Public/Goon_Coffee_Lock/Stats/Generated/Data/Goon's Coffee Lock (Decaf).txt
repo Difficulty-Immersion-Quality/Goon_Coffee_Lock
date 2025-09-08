@@ -1,0 +1,21 @@
+new entry "UnlockedWarlockSpellSlotLevel1"
+type "PassiveData"
+using "UnlockedWarlockSpellSlotLevel1"
+// first level Spell Slots, or spell slots are full.
+// data "DisplayName" "hbb057decg86cfg4b29gb205g1123bb5cd3eb;2"
+// data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnActionResourcesChanged"
+data "StatsFunctors" "IF(HasPassive('UnlockedSpellSlotLevel1') and not HasStatus('GOON_COFFEELOCKTOGGLE_UNLOCK')):ApplyStatus(GOON_COFFEELOCK_SPELL_UNLOCK,100,-1)"
+
+new entry "GOON_COFFEELOCK_SPELL_UNLOCK"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting;ApplyToDead"
+data "StackId" "GOON_COFFEELOCK_SPELL_UNLOCK"
+data "StackType" "Ignore"
+data "StackPriority" "1"
+data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+data "RemoveConditions" "not HasPassive('UnlockedSpellSlotLevel1') or not HasPassive('UnlockedWarlockSpellSlotLevel1')"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "Boosts" "UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_1);UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_2);UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_3);UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_4);UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_5);UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_6);UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_7);UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_8);UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_9)"
+

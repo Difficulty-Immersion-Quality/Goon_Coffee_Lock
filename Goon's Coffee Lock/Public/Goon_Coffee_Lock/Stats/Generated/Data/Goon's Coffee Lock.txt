@@ -14,7 +14,39 @@ data "Icon" "PassiveFeature_Generic_Magical"
 data "Properties" "Highlighted;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar"
 data "Boosts" "IF(Goon_HasWarlockSpellSlot_1()):UnlockSpellVariant(Goon_CoffeeLockSpellCheck_1(),ModifyUseCosts(Add,WarlockSpellSlot,1,1),ModifyUseCosts(Replace,SpellSlotsGroup,0,1,SpellSlotsGroup));IF(Goon_HasWarlockSpellSlot_2()):UnlockSpellVariant(Goon_CoffeeLockSpellCheck_2(),ModifyUseCosts(Add,WarlockSpellSlot,1,2),ModifyUseCosts(Replace,SpellSlotsGroup,0,2,SpellSlotsGroup));IF(Goon_HasWarlockSpellSlot_3()):UnlockSpellVariant(Goon_CoffeeLockSpellCheck_3(),ModifyUseCosts(Add,WarlockSpellSlot,1,3),ModifyUseCosts(Replace,SpellSlotsGroup,0,3,SpellSlotsGroup));IF(Goon_HasWarlockSpellSlot_4()):UnlockSpellVariant(Goon_CoffeeLockSpellCheck_4(),ModifyUseCosts(Add,WarlockSpellSlot,1,4),ModifyUseCosts(Replace,SpellSlotsGroup,0,4,SpellSlotsGroup));IF(Goon_HasWarlockSpellSlot_5()):UnlockSpellVariant(Goon_CoffeeLockSpellCheck_5(),ModifyUseCosts(Add,WarlockSpellSlot,1,5),ModifyUseCosts(Replace,SpellSlotsGroup,0,5,SpellSlotsGroup));IF(Goon_HasWarlockSpellSlot_6()):UnlockSpellVariant(Goon_CoffeeLockSpellCheck_6(),ModifyUseCosts(Add,WarlockSpellSlot,1,6),ModifyUseCosts(Replace,SpellSlotsGroup,0,6,SpellSlotsGroup));IF(Goon_HasWarlockSpellSlot_7()):UnlockSpellVariant(Goon_CoffeeLockSpellCheck_7(),ModifyUseCosts(Add,WarlockSpellSlot,1,7),ModifyUseCosts(Replace,SpellSlotsGroup,0,7,SpellSlotsGroup));IF(Goon_HasWarlockSpellSlot_8()):UnlockSpellVariant(Goon_CoffeeLockSpellCheck_8(),ModifyUseCosts(Add,WarlockSpellSlot,1,8),ModifyUseCosts(Replace,SpellSlotsGroup,0,8,SpellSlotsGroup));IF(Goon_HasWarlockSpellSlot_9()):UnlockSpellVariant(Goon_CoffeeLockSpellCheck_9(),ModifyUseCosts(Add,WarlockSpellSlot,1,9),ModifyUseCosts(Replace,SpellSlotsGroup,0,9,SpellSlotsGroup))"
 
+// ========================== Vanilla passives ==========================
+
+new entry "UnlockedWarlockSpellSlotLevel1"
+type "PassiveData"
+using "UnlockedWarlockSpellSlotLevel1"
+// first level Spell Slots, or spell slots are full.
+// data "DisplayName" "hbb057decg86cfg4b29gb205g1123bb5cd3eb;2"
+// data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnActionResourcesChanged"
+data "StatsFunctors" "IF(HasPassive('UnlockedSpellSlotLevel1') and not HasStatus('GOON_COFFEELOCKTOGGLE_UNLOCK')):ApplyStatus(GOON_COFFEELOCK_SPELL_UNLOCK,100,-1);IF(HasPassive('UnlockedSpellSlotLevel1') and not HasStatus('GOON_COFFEELOCKTOGGLE_UNLOCK')):ApplyStatus(GOON_COFFEELOCKTOGGLE_UNLOCK,100,-1)"
+
+new entry "UnlockedSpellSlotLevel1"
+type "PassiveData"
+using "UnlockedSpellSlotLevel1"
+// first level Spell Slots, or spell slots are full.
+// data "DisplayName" "ha97df7b2g8644g4d6eg9409g05bb15e9774d;1"
+// data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnActionResourcesChanged"
+data "StatsFunctors" "IF(HasPassive('UnlockedWarlockSpellSlotLevel1') and not HasStatus('GOON_COFFEELOCKTOGGLE_UNLOCK')):ApplyStatus(GOON_COFFEELOCKTOGGLE_UNLOCK,100,-1)"
+
 // ========================== Unlock Status ==========================
+
+new entry "GOON_COFFEELOCK_SPELL_UNLOCK"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting;ApplyToDead"
+data "StackId" "GOON_COFFEELOCK_SPELL_UNLOCK"
+data "StackType" "Ignore"
+data "StackPriority" "1"
+data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+data "RemoveConditions" "not HasPassive('UnlockedSpellSlotLevel1') or not HasPassive('UnlockedWarlockSpellSlotLevel1')"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "Boosts" "UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_1);UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_2);UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_3);UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_4);UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_5);UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_6);UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_7);UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_8);UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_9)"
 
 new entry "GOON_COFFEELOCKTOGGLE_UNLOCK"
 type "StatusData"
@@ -26,26 +58,6 @@ data "StackPriority" "1"
 data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
 data "RemoveConditions" "not HasPassive('UnlockedSpellSlotLevel1') or not HasPassive('UnlockedWarlockSpellSlotLevel1')"
 data "Passives" "Goon_CoffeeLockToggle"
-
-// ========================== Vanilla passives ==========================
-
-new entry "UnlockedWarlockSpellSlotLevel1"
-type "PassiveData"
-using "UnlockedWarlockSpellSlotLevel1"
-// first level Spell Slots, or spell slots are full.
-// data "DisplayName" "hbb057decg86cfg4b29gb205g1123bb5cd3eb;2"
-// data "Properties" "IsHidden"
-data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnActionResourcesChanged"
-data "StatsFunctors" "IF(HasPassive('UnlockedSpellSlotLevel1') and not HasStatus('GOON_COFFEELOCKTOGGLE_UNLOCK')):ApplyStatus(GOON_COFFEELOCKTOGGLE_UNLOCK,100,-1)"
-
-new entry "UnlockedSpellSlotLevel1"
-type "PassiveData"
-using "UnlockedSpellSlotLevel1"
-// first level Spell Slots, or spell slots are full.
-// data "DisplayName" "ha97df7b2g8644g4d6eg9409g05bb15e9774d;1"
-// data "Properties" "IsHidden"
-data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnActionResourcesChanged"
-data "StatsFunctors" "IF(HasPassive('UnlockedWarlockSpellSlotLevel1') and not HasStatus('GOON_COFFEELOCKTOGGLE_UNLOCK')):ApplyStatus(GOON_COFFEELOCKTOGGLE_UNLOCK,100,-1)"
 
 // ========================== Coffee Lock Toggle ==========================
 
