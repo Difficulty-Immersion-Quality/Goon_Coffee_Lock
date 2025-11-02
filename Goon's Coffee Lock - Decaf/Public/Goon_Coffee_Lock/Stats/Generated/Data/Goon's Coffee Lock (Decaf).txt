@@ -17,5 +17,4 @@ data "StackPriority" "1"
 data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
 data "RemoveConditions" "not HasPassive('UnlockedSpellSlotLevel1') or not HasPassive('UnlockedWarlockSpellSlotLevel1')"
 data "StatusGroups" "SG_RemoveOnRespec"
-data "Boosts" "UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_1);UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_2);UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_3);UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_4);UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_5);UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_6);UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_7);UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_8);UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock_9)"
-
+data "Boosts" "UnlockSpell(Goon_Shout_CreateSorceryPoints_Warlock,AddChildren,e9127b70-22b7-42a1-b172-d02f828f260a)"

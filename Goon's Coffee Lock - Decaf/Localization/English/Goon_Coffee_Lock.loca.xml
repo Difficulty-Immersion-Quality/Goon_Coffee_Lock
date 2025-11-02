@@ -12,6 +12,7 @@
 	<!-- "Shout_CreateSorceryPoints_8" --> <content contentuid="h1a097d6dg0ba4g4239g9f54g2f39b6e989f4" version="1">Create Sorcery Points: 8</content>
 	<!-- "Shout_CreateSorceryPoints_9" --> <content contentuid="h6ce10c7eg42acg4528g9195gc692989b01d7" version="1">Create Sorcery Points: 9</content>
 
+	<!-- "Goon_Shout_CreateSorceryPoints_Warlock" --> <content contentuid="hbd0328c3g251dg4565g9fb9g8180259c6f2a" version="1">Create Sorcery Points (Warlock)</content>
 	<!-- "Goon_Shout_CreateSorceryPoints_Warlock_1" --> <content contentuid="h60f0b9a3ge3f5g4225g9934gc6278b5f78a7" version="1">Create Sorcery Points: 1 (Warlock)</content>
 	<!-- "Goon_Shout_CreateSorceryPoints_Warlock_2" --> <content contentuid="hd5ecb787g2d22g41b1gba8cg5f98182428c9" version="1">Create Sorcery Points: 2 (Warlock)</content>
 	<!-- "Goon_Shout_CreateSorceryPoints_Warlock_3" --> <content contentuid="h7202b581gb012g4723g9106g46904ed1bfa1" version="1">Create Sorcery Points: 3 (Warlock)</content>
