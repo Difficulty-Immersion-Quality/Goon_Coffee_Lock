@@ -1,0 +1,26 @@
+{
+  "FileVersion": 1,
+  "Progressions": [
+    {
+      "Comment": "Sorcerer level 2",
+      "UUID": "706a869d-7894-453d-b6ac-9428f617649c",
+      "Strings": [
+        {
+          "Action": "Insert",
+          "Type": "PassivesAdded",
+          "Strings": ["Goon_CreateSorceryPoints_Unlock"
+          ]
+        }
+      ]
+    }
+  ],
+  "Lists": [
+    {
+      "Comment": "Sorcerer Font of Magic",
+      "Action": "Remove",
+      "UUID": "979e37ad-05fa-466c-af99-9eb104a6e876",
+      "Type": "SpellList",
+      "Items": ["Shout_CreateSorceryPoints"]
+    }
+  ]
+}
