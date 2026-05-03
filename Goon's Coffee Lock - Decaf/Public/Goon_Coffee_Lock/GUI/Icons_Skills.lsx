@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+	<version major="4" minor="0" revision="6" build="5" />
+    <region id="TextureAtlasInfo">
+        <node id="root">
+            <children>
+                <node id="TextureAtlasIconSize">
+                    <attribute id="Height" type="int64" value="64"/>
+                    <attribute id="Width" type="int64" value="64"/>
+                </node>
+                <node id="TextureAtlasPath">
+                    <attribute id="Path" type="LSString" value="Icons_Goon_Coffee_Lock.dds"/>
+                    <attribute id="UUID" type="FixedString" value="03cf10d6-26ba-4941-9f14-7ee03b4afb56"/>
+                </node>
+                <node id="TextureAtlasTextureSize">
+                    <attribute id="Height" type="int64" value="256"/>
+                    <attribute id="Width" type="int64" value="256"/>
+                </node>
+            </children>
+        </node>
+    </region>
+    <region id="IconUVList">
+        <node id="root">
+            <children>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="XXX"/>
+                    <attribute id="U1" type="float" value="0.0"/> <!-- Left -->
+                    <attribute id="U2" type="float" value="1"/> <!-- Right -->
+                    <attribute id="V1" type="float" value="0.0"/> <!-- Top -->
+                    <attribute id="V2" type="float" value="1"/> <!-- Bottom -->
+                </node>		
+            </children>
+        </node>
+    </region>
+</save>
