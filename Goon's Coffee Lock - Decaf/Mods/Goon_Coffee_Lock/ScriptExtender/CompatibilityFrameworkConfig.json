@@ -8,8 +8,7 @@
         {
           "Action": "Insert",
           "Type": "PassivesAdded",
-          "Strings": ["Goon_CreateSorceryPoints_Unlock"
-          ]
+          "Strings": ["Goon_CreateSorceryPoints_Unlock"]
         }
       ]
     }
